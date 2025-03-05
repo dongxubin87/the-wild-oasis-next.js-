@@ -23,13 +23,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${josefin.className} bg-primary-950 text-primary-100 flex min-h-screen flex-col antialiased`}
+        className={`${josefin.className} relative flex min-h-screen flex-col bg-primary-950 text-primary-100 antialiased`}
       >
         <Header />
-        <div className="flex-1 px-8 py-12">
-          <main className="mx-auto max-w-7xl">{children}</main>
+        <div className="grid flex-1 px-8 py-12">
+          <main className="mx-auto w-full max-w-7xl">{children}</main>
         </div>
-        <footer>Copyright by the wild oasis</footer>
       </body>
     </html>
   );

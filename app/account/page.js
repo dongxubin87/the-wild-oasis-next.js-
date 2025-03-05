@@ -1,7 +1,11 @@
 export const metadata = {
-  title: "Account",
+  title: "Guest area",
 };
 
 export default function Page() {
-  return <h1>Account</h1>;
+  return (
+    <h2 className="mb-7 text-2xl font-semibold text-accent-400">
+      Welcome, Xubin
+    </h2>
+  );
 }
